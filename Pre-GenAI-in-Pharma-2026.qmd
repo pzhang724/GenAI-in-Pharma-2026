@@ -1,0 +1,215 @@
+---
+title: "GenAI in Pharma"
+subtitle: "From personal experiment to the one-person department — and the guardrails that keep it honest"
+author: "Peng Zhang"
+date: 2026-06-05
+date-format: "MMMM YYYY"
+format:
+  revealjs:
+    theme: [default]
+    slide-number: c/t
+    progress: true
+    history: true
+    transition: slide
+    width: 1280
+    height: 720
+    incremental: false
+    toc: false
+    footer: "GenAI in Pharma 2026 — Virtual"
+    title-slide-attributes:
+      data-background-color: "#0b3d5c"
+---
+
+## Where this talk comes from
+
+::: {.incremental}
+- I started using AI as a **personal productivity experiment** — not a strategy.
+- Then I saw **Eric's slides**. They reframed the question for me:
+  the issue isn't *whether* AI helps, it's **knowing what Claude can actually do**.
+- Once you know the ceiling, you start using it in **very different ways**.
+:::
+
+. . .
+
+> This talk is the path from *"a tool I poke at"* to *"how a regulated pharma org should think about it."*
+
+---
+
+# Part 1 — What changes {background-color="#0b3d5c"}
+
+## Many ways to use Claude
+
+Not one workflow — a spectrum:
+
+::: {.incremental}
+- **Ask / chat** — quick reasoning, drafting, explaining
+- **In the IDE** — Claude in **RStudio**, Claude in **VS Code**
+- **Claude Code** — agentic work against a real repo
+- **Agentic + automated workflows** — chained, repeatable, hands-off
+:::
+
+. . .
+
+The mode you pick changes *who does the work* — and *who checks it*.
+
+## The one-person department
+
+::: {.incremental}
+- AI doesn't just speed people up — it **collapses whole workflows** onto one person.
+- Work that needed a team (or a vendor, or a ticket-and-wait) is suddenly **affordable to each individual**.
+- "AI will replace people" is the scary framing.
+  The real shift: **the one-person department becomes possible.**
+:::
+
+## Affordable — almost embarrassingly so
+
+::: {.incremental}
+- Cost per workflow has dropped to the point where I can **build things on my phone** with Claude Code.
+- The barrier is no longer **budget** or **headcount**.
+- The barrier moves somewhere new — to **us**.
+:::
+
+---
+
+# Part 2 — ...but not everyone, and not everything {background-color="#0b3d5c"}
+
+## People become the bottleneck
+
+::: {.incremental}
+- An agent learns a new domain **faster than a person can**.
+- So the limiting factor stops being the tool — it becomes **human understanding**.
+- To some extent, **what a human can comprehend and verify** is now the real ceiling.
+:::
+
+. . .
+
+That's uncomfortable, but it's the honest version of "AI replaces people."
+
+## Human-in-the-loop — a counter-example
+
+::: {.incremental}
+- "Keep a human in the loop" sounds like a safety guarantee.
+- But if the human **can't actually evaluate the output** fast enough or deeply enough,
+  the loop is **theater**, not control.
+- A rubber-stamp reviewer is *worse* than honest automation — it hides the gap.
+:::
+
+. . .
+
+So the question becomes: **what, at minimum, must a human review** for an AI-generated outcome?
+
+## Pre-defined requests don't disappear
+
+::: {.incremental}
+- Not everything should be an open-ended prompt.
+- **Shiny apps and packages are still needed** — for repeatable, validated, pre-defined requests.
+- Agents are great at the novel and the messy;
+  **fixed tools are still better for the known and the regulated.**
+:::
+
+---
+
+# Part 3 — Doing this in Pharma {background-color="#7b1d3a"}
+
+## Governance is the hard part
+
+In a regulated environment, capability is the easy half. The other half:
+
+::: {.incremental}
+- How do we **validate and evaluate a "skill"** before we trust it? → a **working group**
+- **Data privacy** — HIPAA, GDPR
+- **Confidential information & trade secrets** — what can even leave the building?
+- **Where does the model run?** — trust in **Anthropic vs Azure vs Amazon Bedrock**
+:::
+
+## GxP on validated platforms
+
+A GenAI workflow that touches regulated work still owes the usual:
+
+::: {.incremental}
+- **Access control**
+- **Traceability**
+- **Audit trails**
+- **Encryption**
+- Separate **production and development** environments
+:::
+
+. . .
+
+"It's just a chatbot" is not a validation strategy.
+
+## Tools, validated and connected
+
+::: {.incremental}
+- **Validated tools + functions** the agent is allowed to call
+- A **knowledge base** the work is grounded in — mine lives in **Obsidian**
+- **Data models** *(Doug's point)* — agents are only as good as the structure underneath them
+- Domain pipelines like **pycsr** — purpose-built, auditable steps
+:::
+
+---
+
+# Part 4 — Where this is heading {background-color="#0b3d5c"}
+
+## When the model gets good enough
+
+::: {.incremental}
+- Imagine the LLM becomes powerful enough to map **accurately onto the data model**.
+- The friction we design around today — parsing, reconciling, reformatting — **shrinks**.
+- What's left is the part that was always hard: **deciding what's correct.**
+:::
+
+## Who is the document *for*?
+
+::: {.callout-note title="A question I didn't expect to ask"}
+Is this document built for a **human to read** — or for an **agent to read**?
+:::
+
+::: {.incremental}
+- The answer changes how we **write, structure, and store** everything.
+- Human-readable and agent-readable are **starting to diverge** — and we'll have to choose, or serve both deliberately.
+:::
+
+## Three modes of human oversight
+
+::: {.incremental}
+- **Human-in-the-loop** — human approves each step
+- **Human-on-the-loop** — human supervises, intervenes on exception
+- **Human-in-command** — human sets intent and bounds; system runs within them
+:::
+
+. . .
+
+Different work needs different modes — pick deliberately, don't default.
+
+## Accountability doesn't move
+
+::: {.incremental}
+- The model can do the work. It **cannot hold the responsibility**.
+- **People still hold the accountability** — for the output, the decision, the patient impact.
+- That's not a limitation to engineer away. It's the **point**.
+:::
+
+---
+
+# Takeaways {background-color="#0b3d5c"}
+
+## What I'd leave you with
+
+::: {.incremental}
+1. The **one-person department** is real and already affordable.
+2. The new bottleneck is **human understanding**, not cost or compute.
+3. In pharma, **governance, GxP, and data privacy** are the work, not the footnote.
+4. Decide your **oversight mode** on purpose.
+5. **Accountability stays with people** — design for that, don't pretend otherwise.
+:::
+
+## Things I'm still chewing on
+
+- A **Claude Code course** — getting the team to the same baseline
+- Documents authored **for agents**, not just humans
+- How to make "human review" **mean something** under real time pressure
+
+. . .
+
+Thank you — questions welcome.
