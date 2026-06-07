@@ -1,7 +1,7 @@
 ---
 title: "Hands Dirty First"
 subtitle: "Practical Notes from Before, During, and After Building Agentic Workflows"
-author: "Peng Zhang · Associate Director, Innovative Data Sciences · CIMS Global"
+author: "Peng Zhang · CIMS Global"
 date: 2026-06-16
 date-format: "MMMM D, YYYY"
 format:
@@ -22,13 +22,13 @@ format:
           <style>
             .title-logo {
               position: absolute;
-              bottom: 36px;
+              top: 24px;
               height: 56px;
               width: auto;
               z-index: 20;
             }
-            .title-logo-left  { left: 56px; }
-            .title-logo-right { right: 56px; }
+            .title-logo-left  { left: 24px; }
+            .title-logo-right { right: 24px; }
           </style>
     include-before-body:
       - text: |
