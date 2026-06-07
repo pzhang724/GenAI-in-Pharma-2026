@@ -53,11 +53,14 @@ format:
 This talk is presented in two different time zones:
 
 - **US session**
-  - Peng Zhang
-  - Associate Director, Innovative Data Sciences
+  - Peng Zhang,  Associate Director, Innovative Data Sciences
+  - Internal development of R packages, R Shiny apps, agentic workflow, 
+  - R for monitoring and submissions
+  - SME for environment & platform development. 
 - **APAC session** 
-  - Mia Chen
-  - Clinical Data Scientist
+  - Mia Chen, Clinical Data Scientist
+  - Clinical data engineering, R Shiny application development
+  - AI-driven workflow automation for clinical research.
 
 # Before — early exploration
 
@@ -83,9 +86,8 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 
 ::: {.incremental}
 - Previously, I used the agent to ask the question, refine the code for simple tasks 
-- Early this year, [Eric Zhang](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} asked me to review slides for **PharmaDS 2026** and a talk on **Pharma Skills**.
+- Early this year, watch the short courses from [Eric Zhang](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} for **PharmaDS 2026**.
 - [PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller} 
-- [Pharma Skills video](https://drive.google.com/file/d/1O9-SCJEoXGJv6J3YXuZ1eiVB4Jk6Gao/view){.smaller}
 - By talking to the agent, giving detailed information, it can search, analyze and generate review for previous public studies.
 - Moreover, this can happen in a **personal working station**.
 :::
