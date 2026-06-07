@@ -52,36 +52,38 @@ format:
 
 This talk is presented in two different time zones:
 
-- **US session** — Peng Zhang
+- **US session**
+  - Peng Zhang
   - Associate Director, Innovative Data Sciences
-- **APAC session** — Mia Chen
+- **APAC session** 
+  - Mia Chen
   - Clinical Data Scientist
+
+# Before — early exploration
 
 ## Where I'm coming from
 
 ::: {.columns}
 ::: {.column width="55%"}
-From a LinkedIn post I wrote — **six months of getting my hands dirty** before any of the workflow work:
+From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands dirty** before any of the workflow work:
 
 - **Daily** practice with different AI assistants
 - Follow **AI creators**; learn the *curated* news
-- Then pick an **IDE**, spend **$20** on a pro agent, and work **inside the IDE**
-- The whole point: *get your hands dirty first.*
+- Then pick an **IDE**, spend **$20** on a pro agent, and work **inside the IDE and Terminal**
+- Try different models and get familiar 
 
 [Read the post on LinkedIn](https://www.linkedin.com/posts/peng-zhang-4522a0127_finally-i-have-configured-claude-code-on-activity-7433203325115719680-gj3U){style="text-decoration: underline;"}
 :::
 ::: {.column width="45%"}
-![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap" width="520px" fig-align="center"}
+![](image/image.png){fig-align="center"}
 :::
 :::
 
-# Before — early exploration
-
-## Where I started
+## Mindset Change
 
 ::: {.incremental}
-- AI began as a **personal productivity experiment** — not a strategy.
-- Then **Eric Zhang** asked me to review slides for **PharmaDS 2026** and a talk on **Pharma Skills**.
+- Previously, I used the agent to ask the question, refine the code for simple tasks 
+- One day, [**Eric Zhang**](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} asked me to review slides for **PharmaDS 2026** and a talk on **Pharma Skills**.
 - Seeing them, it clicked: **LLMs are now accessible to anyone** — not just specialists.
 :::
 
