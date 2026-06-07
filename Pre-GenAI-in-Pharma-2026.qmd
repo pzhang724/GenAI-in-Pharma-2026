@@ -19,34 +19,36 @@ format:
     footer: "GenAI in Pharma 2026 — Virtual"
 ---
 
-## The threshold we crossed
+## Presented in two sessions
+
+This talk is delivered in both regional sessions:
 
 ::: {.incremental}
-- Since **early 2026**, LLM capability crossed a line: agents can reliably execute
-  **structured workflows** through explicit orchestration — e.g. **Claude Code**.
-- Task-specific guidance lives in **lightweight markdown artifacts** — *skill files*.
-- In a **biostatistical / clinical data** context that means: author **statistical
-  documentation and code** → which produce **analysis datasets and outputs**.
+- **US session** — Peng Zhang
+- **APAC session** — Mia Chen
 :::
 
 . . .
 
-> But building these reliably raises real concerns — accuracy, evaluation, domain
-> knowledge, **GxP**, **data privacy**, and **human accountability**.
+Same hands-on report, two time zones.
 
-## How this talk is organized
+## Where I'm coming from
 
-A hands-on report in three parts:
+::: {.columns}
+::: {.column width="55%"}
+From a LinkedIn post I wrote — **six months of getting my hands dirty** before any of the workflow work:
 
-::: {.incremental}
-1. **Before** — early exploration
-2. **During** — observations after diving in
-3. **After** — considerations for those preparing to do the same
+- **Daily** practice with different AI assistants
+- Follow **AI creators**; learn the *curated* news
+- Then pick an **IDE**, spend **$20** on a pro agent, and work **inside the IDE**
+- The whole point: *get your hands dirty first.*
+
+[Read the post on LinkedIn](https://www.linkedin.com/posts/peng-zhang-4522a0127_finally-i-have-configured-claude-code-on-activity-7433203325115719680-gj3U){.smaller}
 :::
-
-. . .
-
-Examples throughout, to keep it concrete.
+::: {.column width="45%"}
+![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap"}
+:::
+:::
 
 # Before — early exploration
 
@@ -54,72 +56,143 @@ Examples throughout, to keep it concrete.
 
 ::: {.incremental}
 - AI began as a **personal productivity experiment** — not a strategy.
-- Then I saw **Eric's slides**. They reframed the question:
-  the issue isn't *whether* AI helps, it's **knowing what Claude can actually do**.
-- Once you know the ceiling, you start using it in **very different ways**.
+- Then **Eric Zhang** asked me to review slides for **PharmaDS 2026** and a talk on **Pharma Skills**.
+- Seeing them, it clicked: **LLMs are now accessible to anyone** — not just specialists.
 :::
 
-## Many ways to use Claude
+. . .
 
-Not one workflow — a spectrum:
+[PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller} · [Pharma Skills video](https://drive.google.com/file/d/1O9-SCJEoXGJv6J3YXuZ1eiVB4Jk6Gao/view){.smaller}
 
-::: {.incremental}
-- **Ask / chat** — quick reasoning, drafting, explaining
-- **In the IDE** — Claude in **RStudio**, Claude in **VS Code**
-- **Claude Code** — agentic work against a real repo
-- **Agentic + automated workflows** — chained, repeatable, hands-off
+## What I saw
+
+An LLM designing a **group sequential trial** end to end:
+
+::: {.columns}
+::: {.column width="50%"}
+![](image/image-1.png){fig-alt="Claude Code conversational session designing a group sequential trial"}
+
+*Conversational design — it asks for inputs one at a time.*
+:::
+::: {.column width="50%"}
+![](image/image-2.png){fig-alt="Generated design assumptions and interim/final analysis plan tables"}
+
+*The generated design assumptions and analysis plan.*
+:::
 :::
 
 ## Suddenly affordable
 
 ::: {.incremental}
-- Cost per workflow dropped to where I can **build things on my phone** with Claude Code.
-- The barrier is no longer **budget** or **headcount**.
-- Workflows that needed a team became **affordable to each individual** — the
-  **one-person department** becomes possible.
+- Anyone can run **Claude Code** or **Codex** right in the **terminal** on their PC — just a **$20** subscription.
+- **No need to build orchestration** — use it directly.
+- **Numerous resources** to connect (e.g., **ClinicalTrials.gov**).
+- **Hands-on**: build a workflow and try something yourself.
 :::
 
 # During — observations after diving in
 
-## A concrete example
-
-The biostatistics workflow I kept coming back to:
+## Building a workflow is easy now
 
 ::: {.incremental}
-- **Skill file (markdown)** encodes the task + standards
-- → Claude authors **statistical documentation** and **programming code**
-- → code produces **analysis datasets and outputs**
-- → human **reviews and signs off**
+- The **"Skill"** concept in Claude.
+- Instruct it with a **markdown file** and references.
+- The **context window** is large enough to absorb all the knowledge you provide.
 :::
 
-. . .
+## Example — a "Clinical AI Agent"
 
-Simple to describe. The hard part is everything that keeps it **reliable**.
+A **paperclip-style** demo built in **R Shiny**, with pre-recorded results:
 
-## People become the bottleneck
+![](image/image-4.png){fig-alt="Clinical AI Agent Shiny app showing a GLP-1 receptor agonist competitive landscape" width="78%" fig-align="center"}
+
+[pzhang-link-claude-code-paperclip.share.connect.posit.cloud](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/){.smaller}
+
+## Example — generating a mock shell
+
+![](image/Animation.gif){fig-alt="Animation of Claude Code generating a mock shell" width="72%" fig-align="center"}
+
+## Agentic workflow — performance
 
 ::: {.incremental}
-- An agent learns a new domain **faster than a person can**.
-- The limiting factor stops being the tool — it becomes **human understanding**.
-- To some extent, **what a human can comprehend and verify** is now the real ceiling.
+- We'll see many agentic workflows claim to produce **code/results in hours**.
+- For **common deliverables (e.g., TFL)**, a workflow can match a standard team — comparably or even **faster**.
+- But ask: **what are we comparing against?**
+- It's a good way to use AI to **accelerate an existing, validated process** — one built and maintained over years.
 :::
 
-## Human-in-the-loop — a counter-example
+## Agentic workflow — evaluation
 
 ::: {.incremental}
-- "Keep a human in the loop" sounds like a safety guarantee.
-- But if the reviewer **can't actually evaluate the output** deeply enough,
-  the loop is **theater**, not control.
-- So ask: **what, at minimum, must a human review** for an AI-generated outcome?
+- A **Pharma Skills** working group.
+- Build a **benchmark** with test cases — *easy, medium, difficult*.
+- Define **rubrics** — Compliance, Correctness, Completeness.
+- Run the **evaluation**.
+- **Collect the evidence** and results.
 :::
 
-## Pre-defined requests don't disappear
+## Efficiency — data models matter
 
 ::: {.incremental}
-- Not everything should be an open-ended prompt.
-- **Shiny apps and packages are still needed** — for repeatable, validated, pre-defined requests.
-- Agents are great at the novel and messy;
-  **fixed tools are still better for the known and the regulated.**
+- The **data models** that sit between your input and your output.
+- An inspiring thread of conversations with **Doug Kelkhoff**.
+- In the era of agents and LLMs, **data models may matter even more** — structured data that connects to unstructured context.
+- The payoff: **reliability and efficiency**.
+:::
+
+## Sometimes the agent is better than me
+
+::: {.incremental}
+- After all this, I started to think the agent is sometimes **better — and more careful — than I am**.
+- More and more documents get written **for the agent** (e.g., **CLAUDE.md**) to make it efficient.
+- Fortunately, in our industry **humans stay accountable** for every asset.
+- So I keep asking: what is the **minimum a human must still do**?
+- And **what should stay human-readable**?
+:::
+
+## Human-in-the-loop — a real test
+
+::: {.incremental}
+- "Keep a human in the loop" **sounds like a safety guarantee.**
+- A real experience: working on **Pilot 7** ([R Consortium synthetic-data submission](https://github.com/RConsortium/submissions-pilot7-synthetic-data)).
+- **Yilong** asked: *can you generate SDTM and ADaM data from a source dataset in `.xml`?*
+- **Why not?**
+:::
+
+## How I did it {.smaller}
+
+::: {.columns}
+::: {.column width="58%"}
+- Built a **Docker** image for **RStudio**
+- Installed **Claude Code** inside RStudio — yes, through its **terminal**
+- Then had Claude Code:
+  - read **90K+ lines** of source data
+  - generate an **HTML visualization**
+  - **split the data by domain** to get a sense of it
+  - reference the **SDTM IG** via an index (saves context window)
+  - write the **SDTM spec** as **.yaml** (human *and* machine readable), per domain
+  - write the **R code** from the .yaml
+  - generate the **SDTM datasets** + check logs; resolve all coding errors
+  - do the same for **ADaM**
+:::
+::: {.column width="42%"}
+![](image/image-3.png){fig-alt="RStudio with Claude Code running in the terminal on the pilot7 project"}
+
+See the output in **[Pull Request #5](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)**.
+
+Including environment setup, this took **~5 hours** total for the initial draft.
+:::
+:::
+
+## But — am I really in the loop?
+
+::: {.incremental}
+- One uncomfortable truth: after generating the data, **I know almost nothing about it.**
+- I can't be sure the **code** is right or the **data** is right.
+- I only know: the **spec is written**, **code generated**, **no errors**, **data produced** — and **I'm a human in the loop.**
+- Is *that* what "**human-in-the-loop**" should mean? **What are we missing?**
+- The missing piece: an **immediate human review / approve / authorize** step to ensure correctness.
+- **Still ongoing.**
 :::
 
 ## Governance is the hard part
@@ -127,75 +200,9 @@ Simple to describe. The hard part is everything that keeps it **reliable**.
 In a regulated environment, capability is the easy half. The other half:
 
 ::: {.incremental}
-- **Validate / evaluate a "skill"** before trusting it → a **working group**
 - **Data privacy** — HIPAA, GDPR
 - **Confidential information & trade secrets** — what can leave the building?
 - **Where does the model run?** — trust in **Anthropic vs Azure vs Amazon Bedrock**
-:::
-
-## GxP on validated platforms
-
-A GenAI workflow that touches regulated work still owes the usual:
-
-::: {.incremental}
-- **Access control**, **traceability**, **audit trails**, **encryption**
-- Separate **production and development** environments
-- **Validated tools + functions** the agent is allowed to call
-- A grounded **knowledge base** — mine lives in **Obsidian**
-- Solid **data models** *(Doug's point)* and purpose-built pipelines like **pycsr**
-:::
-
-# After — for those preparing to do the same
-
-## When the model gets good enough
-
-::: {.incremental}
-- Imagine the LLM becomes powerful enough to map **accurately onto the data model**.
-- The friction we design around today — parsing, reconciling, reformatting — **shrinks**.
-- What's left is the part that was always hard: **deciding what's correct.**
-:::
-
-## Who is the document *for*?
-
-::: {.callout-note title="A question I didn't expect to ask"}
-Is this document built for a **human to read** — or for an **agent to read**?
-:::
-
-::: {.incremental}
-- The answer changes how we **write, structure, and store** everything.
-- Human-readable and agent-readable are **starting to diverge**.
-:::
-
-## Three modes of human oversight
-
-::: {.incremental}
-- **Human-in-the-loop** — human approves each step
-- **Human-on-the-loop** — human supervises, intervenes on exception
-- **Human-in-command** — human sets intent and bounds; system runs within them
-:::
-
-. . .
-
-Different work needs different modes — pick deliberately, don't default.
-
-## Accountability doesn't move
-
-::: {.incremental}
-- The model can do the work. It **cannot hold the responsibility**.
-- **People still hold the accountability** — for the output, the decision, the patient impact.
-- That's not a limitation to engineer away. It's the **point**.
-:::
-
-# Takeaways
-
-## What I'd leave you with
-
-::: {.incremental}
-1. Get your **hands dirty first** — the ceiling moves faster than the slides about it.
-2. The new bottleneck is **human understanding**, not cost or compute.
-3. In pharma, **governance, GxP, and data privacy** are the work, not the footnote.
-4. Decide your **oversight mode** on purpose.
-5. **Accountability stays with people** — design for that, don't pretend otherwise.
 :::
 
 ## Things I'm still chewing on
@@ -203,6 +210,18 @@ Different work needs different modes — pick deliberately, don't default.
 - A **Claude Code course** — getting the team to the same baseline
 - Documents authored **for agents**, not just humans
 - How to make "human review" **mean something** under real time pressure
+
+# Conclusion
+
+## What I'd leave you with
+
+::: {.incremental}
+1. **Get your hands dirty first** — the ceiling moves faster than the slides about it.
+2. Building a workflow is **easy now**; making it **reliable and governed** is the real work.
+3. The new bottleneck is **human understanding and review**, not cost or compute.
+4. **Evaluate** with benchmarks and rubrics; lean on solid **data models**.
+5. **Accountability stays with people** — design for that, don't pretend otherwise.
+:::
 
 . . .
 
