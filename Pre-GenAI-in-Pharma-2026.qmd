@@ -1,9 +1,14 @@
 ---
 title: "Hands Dirty First"
 subtitle: "Practical Notes from Before, During, and After Building Agentic Workflows"
-author: "Peng Zhang · CIMS Global"
+author: "Peng Zhang · Associate Director, Innovative Data Sciences · CIMS Global"
 date: 2026-06-16
 date-format: "MMMM D, YYYY"
+title-slide-attributes:
+  data-background-image: "image/logo.png, image/logo-rinpharma.png"
+  data-background-size: "200px, 200px"
+  data-background-position: "22% 86%, 78% 86%"
+  data-background-repeat: "no-repeat, no-repeat"
 format:
   revealjs:
     output-file: index.html
@@ -18,11 +23,6 @@ format:
     toc: false
     footer: "GenAI in Pharma 2026 — Virtual"
 ---
-
-::: {.title-logos}
-![](image/logo.png){fig-alt="CIMS Global logo" height="64px"}
-![](image/logo-rinpharma.png){fig-alt="R/Pharma logo" height="64px"}
-:::
 
 ## Presented in two sessions {.bigtext}
 

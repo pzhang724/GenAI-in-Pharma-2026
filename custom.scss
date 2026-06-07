@@ -86,17 +86,6 @@ body.reveal-viewport {
   font-size: 1.15em;
 }
 
-// Two logos centered below the title block.
-.title-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 1.6rem;
-}
-.title-logos p { margin: 0; }
-.title-logos img { margin: 0; }
-
 // --- Per-slide larger text (`{.bigtext}`) ------------------------------
 .reveal .bigtext p,
 .reveal .bigtext li {
