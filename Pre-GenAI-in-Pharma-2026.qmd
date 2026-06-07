@@ -23,12 +23,8 @@ format:
 
 This talk is delivered in both regional sessions:
 
-::: {.incremental}
 - **US session** — Peng Zhang
 - **APAC session** — Mia Chen
-:::
-
-. . .
 
 Same hands-on report, two time zones.
 

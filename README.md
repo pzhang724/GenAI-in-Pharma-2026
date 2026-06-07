@@ -4,8 +4,8 @@ GenAI in Pharma 2026 — Virtual. A reveal.js presentation built with [Quarto](h
 
 - **Source:** [`Pre-GenAI-in-Pharma-2026.qmd`](Pre-GenAI-in-Pharma-2026.qmd)
 - **Outline / scratch notes:** [`draft.md`](draft.md)
-- **Live slides:** https://pzhang724.github.io/GenAI-in-Pharma-2026/Pre-GenAI-in-Pharma-2026.html
-  (the repo root URL redirects here)
+- **Live slides:** https://pzhang724.github.io/GenAI-in-Pharma-2026/
+  (renders to `index.html` and is served at the site root)
 
 ## How publishing works
 
