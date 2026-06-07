@@ -5,12 +5,13 @@ $primary-red: #2B2B2B;  // accent / emphasis — now black (was red #C8102E)
 $charcoal:    #2B2B2B;  // body text (black)
 $gray:        #6B6B6B;  // muted text (footer, slide number)
 $white:       #FFFFFF;  // background
+$link-blue:   #1A5FB4;  // clickable links
 
 // Reveal theme variables
 $body-bg:        $white;
 $body-color:     $charcoal;
-$link-color:     $primary-red;
-$link-color-hover: darken($primary-red, 10%);
+$link-color:     $link-blue;
+$link-color-hover: darken($link-blue, 10%);
 $selection-bg:   rgba($primary-red, 0.25);
 $selection-color: $charcoal;
 
@@ -18,6 +19,15 @@ $presentation-heading-color:       $charcoal;
 $presentation-heading-font-weight: 700;
 
 /*-- scss:rules --*/
+
+// All clickable links: blue + underlined.
+.reveal a {
+  color: $link-blue;
+  text-decoration: underline;
+}
+.reveal a:hover {
+  color: darken($link-blue, 10%);
+}
 
 // White background everywhere.
 .reveal,

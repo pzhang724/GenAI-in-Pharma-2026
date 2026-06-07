@@ -84,12 +84,12 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 ::: {.incremental}
 - Previously, I used the agent to ask the question, refine the code for simple tasks 
 - One day, [**Eric Zhang**](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} asked me to review slides for **PharmaDS 2026** and a talk on **Pharma Skills**.
-- Seeing them, it clicked: **LLMs are now accessible to anyone** — not just specialists.
+- [PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller} 
+- [Pharma Skills video](https://drive.google.com/file/d/1O9-SCJEoXGJv6J3YXuZ1eiVB4Jk6Gao/view){.smaller}
 :::
 
 . . .
 
-[PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller} · [Pharma Skills video](https://drive.google.com/file/d/1O9-SCJEoXGJv6J3YXuZ1eiVB4Jk6Gao/view){.smaller}
 
 ## What I saw
 
