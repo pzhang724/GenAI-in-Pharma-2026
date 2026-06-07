@@ -40,9 +40,9 @@ From a LinkedIn post I wrote — **six months of getting my hands dirty** before
 - The whole point: *get your hands dirty first.*
 :::
 ::: {.column width="45%"}
-![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap" width="440px" fig-align="center"}
+![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap" width="520px" fig-align="center"}
 
-[Read the post on LinkedIn](https://www.linkedin.com/posts/peng-zhang-4522a0127_finally-i-have-configured-claude-code-on-activity-7433203325115719680-gj3U){.smaller}
+[Read the post on LinkedIn](https://www.linkedin.com/posts/peng-zhang-4522a0127_finally-i-have-configured-claude-code-on-activity-7433203325115719680-gj3U){style="text-decoration: underline;"}
 :::
 :::
 
