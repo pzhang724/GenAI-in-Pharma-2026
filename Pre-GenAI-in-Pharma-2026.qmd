@@ -19,14 +19,12 @@ format:
     footer: "GenAI in Pharma 2026 — Virtual"
 ---
 
-## Presented in two sessions
+## Presented in two sessions {.bigtext}
 
-This talk is delivered in both regional sessions:
+This talk is presented in two different time zones:
 
-- **US session** — Peng Zhang
-- **APAC session** — Mia Chen
-
-Same hands-on report, two time zones.
+- **US session** — Peng Zhang, Associate Director, Innovative Data Sciences
+- **APAC session** — Mia Chen, Clinical Data Scientist
 
 ## Where I'm coming from
 

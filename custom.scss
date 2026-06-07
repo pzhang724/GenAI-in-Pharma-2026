@@ -71,6 +71,13 @@ body.reveal-viewport {
   margin-bottom: 0.35em;
 }
 
+// --- Per-slide larger text (`{.bigtext}`) ------------------------------
+.reveal .bigtext p,
+.reveal .bigtext li {
+  font-size: 1.4em;
+  line-height: 1.45;
+}
+
 // --- Callouts ----------------------------------------------------------
 .reveal .callout.callout-style-default {
   border-left-color: $primary-red;
