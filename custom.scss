@@ -39,9 +39,9 @@ body.reveal-viewport {
 }
 
 // --- Headings ----------------------------------------------------------
-// Section divider slides (`# Title`) render as red headings on white.
+// Section divider slides (`# Title`) render as black headings on white.
 .reveal h1 {
-  color: $primary-red;
+  color: $charcoal;
 }
 
 .reveal h2 {
