@@ -4,11 +4,6 @@ subtitle: "Practical Notes from Before, During, and After Building Agentic Workf
 author: "Peng Zhang · Associate Director, Innovative Data Sciences · CIMS Global"
 date: 2026-06-16
 date-format: "MMMM D, YYYY"
-title-slide-attributes:
-  data-background-image: "image/logo.png, image/logo-rinpharma.png"
-  data-background-size: "200px, 200px"
-  data-background-position: "22% 86%, 78% 86%"
-  data-background-repeat: "no-repeat, no-repeat"
 format:
   revealjs:
     output-file: index.html
@@ -22,6 +17,35 @@ format:
     incremental: false
     toc: false
     footer: "GenAI in Pharma 2026 — Virtual"
+    include-in-header:
+      - text: |
+          <style>
+            .title-logo {
+              position: absolute;
+              bottom: 36px;
+              height: 56px;
+              width: auto;
+              z-index: 20;
+            }
+            .title-logo-left  { left: 56px; }
+            .title-logo-right { right: 56px; }
+          </style>
+    include-before-body:
+      - text: |
+          <img src="image/logo.png" class="title-logo title-logo-left" alt="CIMS Global logo" />
+          <img src="image/logo-rinpharma.png" class="title-logo title-logo-right" alt="R/Pharma logo" />
+    include-after-body:
+      - text: |
+          <script>
+            function toggleTitleLogos(indexh) {
+              const display = indexh === 0 ? "" : "none";
+              document.querySelectorAll("img.title-logo").forEach(img => {
+                img.style.display = display;
+              });
+            }
+            Reveal.addEventListener("ready", e => toggleTitleLogos(e.indexh));
+            Reveal.addEventListener("slidechanged", e => toggleTitleLogos(e.indexh));
+          </script>
 ---
 
 ## Presented in two sessions {.bigtext}
