@@ -50,10 +50,10 @@ format:
 
 ## {.bigtext}
 
-This talk is presented in two different time zones:
+This talk is presented in two different time zones and available [here](https://pzhang724.github.io/GenAI-in-Pharma-2026):
 
 - **US session**
-  - Peng Zhang,  Associate Director, Innovative Data Sciences; [Linkedin](linkedin.com/in/peng-zhang-4522a0127), [Github](https://github.com/pzhang724/)
+  - Peng Zhang,  Associate Director, Innovative Data Sciences; [Linkedin](https://www.linkedin.com/in/peng-zhang-4522a0127), [Github](https://github.com/pzhang724/)
   - Internal development of R packages, R Shiny apps, agentic workflow, 
   - R for monitoring and submissions
   - SME for environment & platform development. 
@@ -61,7 +61,6 @@ This talk is presented in two different time zones:
   - Mia Chen, Clinical Data Scientist; [Linkedin](https://www.linkedin.com/in/chchen11/)
   - Clinical data engineering, R Shiny application development
   - AI-driven workflow automation for clinical research.
-- The materials are publicly available [here](https://pzhang724.github.io/GenAI-in-Pharma-2026)
 
 # Before — early exploration
 
