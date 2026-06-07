@@ -38,11 +38,11 @@ From a LinkedIn post I wrote — **six months of getting my hands dirty** before
 - Follow **AI creators**; learn the *curated* news
 - Then pick an **IDE**, spend **$20** on a pro agent, and work **inside the IDE**
 - The whole point: *get your hands dirty first.*
-
-[Read the post on LinkedIn](https://www.linkedin.com/posts/peng-zhang-4522a0127_finally-i-have-configured-claude-code-on-activity-7433203325115719680-gj3U){.smaller}
 :::
 ::: {.column width="45%"}
-![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap" width="330px"}
+![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap" width="440px" fig-align="center"}
+
+[Read the post on LinkedIn](https://www.linkedin.com/posts/peng-zhang-4522a0127_finally-i-have-configured-claude-code-on-activity-7433203325115719680-gj3U){.smaller}
 :::
 :::
 
