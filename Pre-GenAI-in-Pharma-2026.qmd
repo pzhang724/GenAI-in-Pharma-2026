@@ -1,7 +1,7 @@
 ---
 title: "Hands Dirty First"
 subtitle: "Practical Notes from Before, During, and After Building Agentic Workflows"
-author: "Peng Zhang"
+author: "Peng Zhang · CIMS Global"
 date: 2026-06-16
 date-format: "MMMM D, YYYY"
 format:
@@ -46,7 +46,7 @@ From a LinkedIn post I wrote — **six months of getting my hands dirty** before
 [Read the post on LinkedIn](https://www.linkedin.com/posts/peng-zhang-4522a0127_finally-i-have-configured-claude-code-on-activity-7433203325115719680-gj3U){.smaller}
 :::
 ::: {.column width="45%"}
-![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap"}
+![](image/image.png){fig-alt="LinkedIn post describing a six-month AI exploration roadmap" width="330px"}
 :::
 :::
 
@@ -70,12 +70,12 @@ An LLM designing a **group sequential trial** end to end:
 
 ::: {.columns}
 ::: {.column width="50%"}
-![](image/image-1.png){fig-alt="Claude Code conversational session designing a group sequential trial"}
+![](image/image-1.png){fig-alt="Claude Code conversational session designing a group sequential trial" height="300px" fig-align="center"}
 
 *Conversational design — it asks for inputs one at a time.*
 :::
 ::: {.column width="50%"}
-![](image/image-2.png){fig-alt="Generated design assumptions and interim/final analysis plan tables"}
+![](image/image-2.png){fig-alt="Generated design assumptions and interim/final analysis plan tables" height="300px" fig-align="center"}
 
 *The generated design assumptions and analysis plan.*
 :::
@@ -104,7 +104,7 @@ An LLM designing a **group sequential trial** end to end:
 
 A **paperclip-style** demo built in **R Shiny**, with pre-recorded results:
 
-![](image/image-4.png){fig-alt="Clinical AI Agent Shiny app showing a GLP-1 receptor agonist competitive landscape" width="78%" fig-align="center"}
+![](image/image-4.png){fig-alt="Clinical AI Agent Shiny app showing a GLP-1 receptor agonist competitive landscape" width="66%" fig-align="center"}
 
 [pzhang-link-claude-code-paperclip.share.connect.posit.cloud](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/){.smaller}
 
@@ -164,19 +164,17 @@ A **paperclip-style** demo built in **R Shiny**, with pre-recorded results:
 ::: {.columns}
 ::: {.column width="58%"}
 - Built a **Docker** image for **RStudio**
-- Installed **Claude Code** inside RStudio — yes, through its **terminal**
+- Installed **Claude Code** inside it — through RStudio's **terminal**
 - Then had Claude Code:
-  - read **90K+ lines** of source data
-  - generate an **HTML visualization**
-  - **split the data by domain** to get a sense of it
-  - reference the **SDTM IG** via an index (saves context window)
-  - write the **SDTM spec** as **.yaml** (human *and* machine readable), per domain
-  - write the **R code** from the .yaml
-  - generate the **SDTM datasets** + check logs; resolve all coding errors
-  - do the same for **ADaM**
+  - read **90K+ lines** of source data; build an **HTML visualization**
+  - **split by domain** to get a feel for the data
+  - reference the **SDTM IG** via an index (saves context)
+  - write the **SDTM spec** as **.yaml** (human + machine readable)
+  - write **R code** from the .yaml; generate datasets + check logs
+  - resolve all coding errors — then do the same for **ADaM**
 :::
 ::: {.column width="42%"}
-![](image/image-3.png){fig-alt="RStudio with Claude Code running in the terminal on the pilot7 project"}
+![](image/image-3.png){fig-alt="RStudio with Claude Code running in the terminal on the pilot7 project" height="240px" fig-align="center"}
 
 See the output in **[Pull Request #5](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)**.
 
