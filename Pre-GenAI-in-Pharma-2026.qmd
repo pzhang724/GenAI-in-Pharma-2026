@@ -108,81 +108,48 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 :::
 :::
 
+# During — observations after diving in
+
 ## Suddenly affordable
 
 ::: {.incremental}
 - Anyone can run **Claude Code** or **Codex** right in the **terminal** on their PC, and with just a **$20** subscription.
-- **No need to build orchestration from scratch** — use it directly.
-- **Numerous resources** to connect (e.g., **ClinicalTrials.gov**).
-- **Hands-on**: build a workflow and try something yourself.
+  - **No need to build orchestration from scratch** — use it directly.
+  - **Numerous resources** to connect (e.g., **ClinicalTrials.gov**).
+  - **Hands-on**: build a workflow and try something yourself.
+- Building an agentic workflow is so accessible
+  - The **"Skill"** concept in Claude.
+  - Instruct it with a **markdown file** and references.
+  - The **context window** is large enough to absorb all the knowledge you provide.
 :::
 
-# During — observations after diving in
+## Example 1 - A demo for [paperclip](https://gxl.ai/blog/paperclip)
 
-## Building a workflow is easy now
-
-::: {.incremental}
-- The **"Skill"** concept in Claude.
-- Instruct it with a **markdown file** and references.
-- The **context window** is large enough to absorb all the knowledge you provide.
-:::
-
-## Example — a "Clinical AI Agent"
-
-A **paperclip-style** demo built in **R Shiny**, with pre-recorded results:
+A tool for scientific literature reivew, personally built them in **R Shiny** by different roles. [link](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/)
 
 ![](image/image-4.png){fig-alt="Clinical AI Agent Shiny app showing a GLP-1 receptor agonist competitive landscape" width="66%" fig-align="center"}
 
-[pzhang-link-claude-code-paperclip.share.connect.posit.cloud](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/){.smaller}
 
-## Example — generating a mock shell
+## Example 2 — generating a mock shell
 
 ![](image/Animation.gif){fig-alt="Animation of Claude Code generating a mock shell" width="72%" fig-align="center"}
 
-## Agentic workflow — performance
+## Quick Personal Reflection
 
 ::: {.incremental}
-- We'll see many agentic workflows claim to produce **code/results in hours**.
-- For **common deliverables (e.g., TFL)**, a workflow can match a standard team — comparably or even **faster**.
-- But ask: **what are we comparing against?**
-- It's a good way to use AI to **accelerate an existing, validated process** — one built and maintained over years.
-:::
-
-## Agentic workflow — evaluation
-
-::: {.incremental}
-- A **Pharma Skills** working group.
-- Build a **benchmark** with test cases — *easy, medium, difficult*.
-- Define **rubrics** — Compliance, Correctness, Completeness.
-- Run the **evaluation**.
-- **Collect the evidence** and results.
-:::
-
-## Efficiency — data models matter
-
-::: {.incremental}
-- The **data models** that sit between your input and your output.
-- An inspiring thread of conversations with **Doug Kelkhoff**.
-- In the era of agents and LLMs, **data models may matter even more** — structured data that connects to unstructured context.
-- The payoff: **reliability and efficiency**.
-:::
-
-## Sometimes the agent is better than me
-
-::: {.incremental}
-- After all this, I started to think the agent is sometimes **better — and more careful — than I am**.
-- More and more documents get written **for the agent** (e.g., **CLAUDE.md**) to make it efficient.
+- Sometimes the agent is better than me (Carefulness, Efficiency, Understanding in some aspects, etc.)
+- More and more documents get written **for the agent** (e.g., **CLAUDE.md**)
 - Fortunately, in our industry **humans stay accountable** for every asset.
 - So I keep asking: what is the **minimum a human must still do**?
 - And **what should stay human-readable**?
 :::
 
-## Human-in-the-loop — a real test
+## An interesting Experience
 
 ::: {.incremental}
 - "Keep a human in the loop" **sounds like a safety guarantee.**
-- A real experience: working on **Pilot 7** ([R Consortium synthetic-data submission](https://github.com/RConsortium/submissions-pilot7-synthetic-data)).
-- **Yilong** asked: *can you generate SDTM and ADaM data from a source dataset in `.xml`?*
+- A real experience: working on **Pilot 7** Synthetic Data Generation ([R Consortium synthetic-data submission](https://github.com/RConsortium/submissions-pilot7-synthetic-data)).
+- Group Lead [Yilong Zhang](https://www.linkedin.com/in/yilongzhang/) asked: *can you generate SDTM and ADaM data from a source dataset in `.xml`?*
 - **Why not?**
 :::
 
@@ -219,6 +186,41 @@ Including environment setup, this took **~5 hours** total for the initial draft.
 - The missing piece: an **immediate human review / approve / authorize** step to ensure correctness.
 - **Still ongoing.**
 :::
+# After - Different Aspects to consider 
+
+## Comparison
+
+::: {.incremental}
+- We might see lots of agentic workflow claim they are generating code/results in **a short period of time** (e.g. several hours)
+- However, original programmatic solutions can also address this efficiently (e.g., TFL)
+- So ask: **what are we comparing against by using AI?**
+- It's a good way to use AI to **accelerate an existing, validated process** (maintained and validated in several years)
+:::
+
+## Evaluation
+
+::: {.incremental}
+- [Submission Working Group Pilot 7](https://github.com/RConsortium/pharma-skills)
+    - Publicly Available agentic workflow in Pharma. 
+    - Still ongoing 
+- Recommendations 
+  - Build your **benchmark** with test cases — *easy, medium, difficult*.
+  - Define your **rubrics** — Compliance, Correctness, Completeness.
+  - Run the **evaluation** on your agentic workflow.
+  - **Collect the evidence** and results.
+  - [Good References](https://agentskills.io/home)
+:::
+
+## Efficiency — data models matter
+
+::: {.incremental}
+- An inspiring thread of conversations with **Doug Kelkhoff**.
+- In the era of agents and LLMs, **data models may matter even more** — structured data that connects to unstructured context.
+- This standard sits between your input and output.
+- Benefit: **reliability and efficiency**.
+:::
+
+
 
 ## Governance is the hard part
 
