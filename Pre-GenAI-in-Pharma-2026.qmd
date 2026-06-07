@@ -89,7 +89,7 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 - Early this year, watch the short courses from [Eric Zhang](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} for **PharmaDS 2026**.
 - [PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller} 
 - By talking to the agent, giving detailed information, it can search, analyze and generate review for previous public studies.
-- Moreover, this can happen in a **personal working station**.
+- Moreover, this can happen in a **personal workplace**.
 :::
 
 . . .
@@ -99,7 +99,7 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 
 ::: {.columns}
 ::: {.column width="50%"}
-![](image/image-1.png){ height="500px" fig-align="center"}
+![](image/image-1.png){ height="300px" fig-align="center"}
 
 *Provide information in the Claude Code*
 :::
@@ -159,22 +159,25 @@ A tool for scientific literature reivew, personally built them in **R Shiny** by
 
 ::: {.columns}
 ::: {.column width="58%"}
-- Built a **Docker** image for **RStudio**
-- Installed **Claude Code** inside it — through RStudio's **terminal**
-- Then had Claude Code:
-  - read **90K+ lines** of source data; build an **HTML visualization**
-  - **split by domain** to get a feel for the data
-  - reference the **SDTM IG** via an index (saves context)
-  - write the **SDTM spec** as **.yaml** (human + machine readable)
-  - write **R code** from the .yaml; generate datasets + check logs
-  - resolve all coding errors — then do the same for **ADaM**
+- I created a docker for RStudio
+- I install Claude Code in the RStudio (Yes you can use that through terminal from RStudio)
+- I use Claude Code to:
+  - Read the more than 90K line of data
+  - Generate an html visualization
+  - Separate the data by domain to have a sense on the data.
+- Then ask agent to
+  - Use reference from SDTM IG with index (more efficiently, saving window)
+  - Write the SDTM spec into .yaml format (human and machine readable) for different domain
+  - Write the R code based on .yaml file
+  - Generate the SDTM dataset and checklogs, resolve all the coding errors
+  - Do the same for ADaM Part. 
+- [Pull Request](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)
+- Including Environment setup, this costs me around 5 hours totally for the initial draft.
 :::
 ::: {.column width="42%"}
-![](image/image-3.png){fig-alt="RStudio with Claude Code running in the terminal on the pilot7 project" height="240px" fig-align="center"}
+![](image/image-3.png){fig-align="center"}
 
-See the output in **[Pull Request #5](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)**.
 
-Including environment setup, this took **~5 hours** total for the initial draft.
 :::
 :::
 
@@ -183,11 +186,13 @@ Including environment setup, this took **~5 hours** total for the initial draft.
 ::: {.incremental}
 - One uncomfortable truth: after generating the data, **I know almost nothing about it.**
 - I can't be sure the **code** is right or the **data** is right.
-- I only know: the **spec is written**, **code generated**, **no errors**, **data produced** — and **I'm a human in the loop.**
+- I only know: the **spec is written**, **code generated**, **no errors**, **data produced** 
+— and **I'm a human in the loop.**
 - Is *that* what "**human-in-the-loop**" should mean? **What are we missing?**
 - The missing piece: an **immediate human review / approve / authorize** step to ensure correctness.
-- **Still ongoing.**
+- **Still ongoing.** from the working group
 :::
+
 # After - Different Aspects to consider 
 
 ## Comparison
@@ -216,7 +221,7 @@ Including environment setup, this took **~5 hours** total for the initial draft.
 ## Efficiency — data models matter
 
 ::: {.incremental}
-- An inspiring thread of conversations with **Doug Kelkhoff**.
+- An inspiring thread of conversations with [Doug Kelkhoff](https://www.linkedin.com/in/doug-kelkhoff/).
 - In the era of agents and LLMs, **data models may matter even more** — structured data that connects to unstructured context.
 - This standard sits between your input and output.
 - Benefit: **reliability and efficiency**.
@@ -234,23 +239,18 @@ In a regulated environment, capability is the easy half. The other half:
 - **Where does the model run?** — trust in **Anthropic vs Azure vs Amazon Bedrock**
 :::
 
-## Things I'm still chewing on
-
-- A **Claude Code course** — getting the team to the same baseline
-- Documents authored **for agents**, not just humans
-- How to make "human review" **mean something** under real time pressure
 
 # Conclusion
 
 ## What I'd leave you with
 
 ::: {.incremental}
-1. **Get your hands dirty first** — the ceiling moves faster than the slides about it.
-2. Building a workflow is **easy now**; making it **reliable and governed** is the real work.
-3. The new bottleneck is **human understanding and review**, not cost or compute.
-4. **Evaluate** with benchmarks and rubrics; lean on solid **data models**.
-5. **Accountability stays with people** — design for that, don't pretend otherwise.
+-  Get your hands dirty first — Try using terminal and different CLI.
+-  Build a workflow for yourself and see what are available and what can be improved.
+-  Domain knowledge still matter the most for the correctness; Accountability stays with people
+-  Use dummy data and public available information, and take advantage of them.
 :::
+
 
 . . .
 
