@@ -50,26 +50,32 @@ format:
 
 ## {.bigtext}
 
-::: {.columns}
-::: {.column width="74%"}
 This talk is presented in two different time zones and available [here](https://pzhang724.github.io/GenAI-in-Pharma-2026):
 
+::: {.columns}
+::: {.column width="78%"}
 - **US session**
   - Peng Zhang,  Associate Director, Innovative Data Sciences; [Linkedin](https://www.linkedin.com/in/peng-zhang-4522a0127), [Github](https://github.com/pzhang724/)
   - Internal development of R packages, R Shiny apps, and agentic workflows
   - SME for environment & platform development
-- **APAC session**
-  - Mia Chen, Clinical Data Scientist; [Linkedin](https://www.linkedin.com/in/chchen11/)
-  - Clinical data engineering, R Shiny application development
-  - AI-driven workflow automation for clinical research.
 :::
-::: {.column width="26%"}
+::: {.column width="22%"}
 ![](image/peng.png){.headshot fig-alt="Peng Zhang"}
 
 ::: {.headshot-caption}
 Peng Zhang
 :::
+:::
+:::
 
+::: {.columns}
+::: {.column width="78%"}
+- **APAC session**
+  - Mia Chen, Clinical Data Scientist; [Linkedin](https://www.linkedin.com/in/chchen11/)
+  - Clinical data engineering, R Shiny application development
+  - AI-driven workflow automation for clinical research.
+:::
+::: {.column width="22%"}
 ![](image/mia.png){.headshot fig-alt="Mia Chen"}
 
 ::: {.headshot-caption}
