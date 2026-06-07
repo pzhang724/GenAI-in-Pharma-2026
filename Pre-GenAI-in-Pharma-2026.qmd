@@ -48,7 +48,7 @@ format:
           </script>
 ---
 
-## Presented in two sessions {.bigtext}
+## {.bigtext}
 
 This talk is presented in two different time zones:
 

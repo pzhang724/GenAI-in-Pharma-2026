@@ -87,10 +87,26 @@ body.reveal-viewport {
 }
 
 // --- Per-slide larger text (`{.bigtext}`) ------------------------------
-.reveal .bigtext p,
-.reveal .bigtext li {
-  font-size: 1.4em;
+// Empty heading on this slide — collapse it so it leaves no gap.
+.reveal .bigtext h2 {
+  display: none;
+}
+
+// Intro line.
+.reveal .bigtext p {
+  font-size: 1.25em;
   line-height: 1.45;
+}
+
+// Speaker-name lines (top-level bullets) — large.
+.reveal .bigtext li {
+  font-size: 1.7em;
+  line-height: 1.35;
+}
+
+// Job-title lines (sub-bullets) — small relative to the name.
+.reveal .bigtext li li {
+  font-size: 0.6em;
 }
 
 // --- Callouts ----------------------------------------------------------
