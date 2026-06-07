@@ -23,7 +23,7 @@ format:
             .title-logo {
               position: absolute;
               top: 24px;
-              height: 56px;
+              height: 80px;
               width: auto;
               z-index: 20;
             }
@@ -83,11 +83,11 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 
 ::: {.incremental}
 - Previously, I used the agent to ask the question, refine the code for simple tasks 
-- One day, [**Eric Zhang**](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} asked me to review slides for **PharmaDS 2026** and a talk on **Pharma Skills**.
+- Early this year, [Eric Zhang](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} asked me to review slides for **PharmaDS 2026** and a talk on **Pharma Skills**.
 - [PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller} 
 - [Pharma Skills video](https://drive.google.com/file/d/1O9-SCJEoXGJv6J3YXuZ1eiVB4Jk6Gao/view){.smaller}
 - By talking to the agent, giving detailed information, it can search, analyze and generate review for previous public studies.
-- Moreover, this can happen in a personal working station.
+- Moreover, this can happen in a **personal working station**.
 :::
 
 . . .
@@ -97,22 +97,22 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 
 ::: {.columns}
 ::: {.column width="50%"}
-![](image/image-1.png){fig-alt="Claude Code conversational session designing a group sequential trial" height="300px" fig-align="center"}
+![](image/image-1.png){ height="500px" fig-align="center"}
 
-*Conversational design — it asks for inputs one at a time.*
+*Provide information in the Claude Code*
 :::
 ::: {.column width="50%"}
-![](image/image-2.png){fig-alt="Generated design assumptions and interim/final analysis plan tables" height="300px" fig-align="center"}
+![](image/image-2.png){height="500px" fig-align="center"}
 
-*The generated design assumptions and analysis plan.*
+*Clean and formatted output generated*
 :::
 :::
 
 ## Suddenly affordable
 
 ::: {.incremental}
-- Anyone can run **Claude Code** or **Codex** right in the **terminal** on their PC — just a **$20** subscription.
-- **No need to build orchestration** — use it directly.
+- Anyone can run **Claude Code** or **Codex** right in the **terminal** on their PC, and with just a **$20** subscription.
+- **No need to build orchestration from scratch** — use it directly.
 - **Numerous resources** to connect (e.g., **ClinicalTrials.gov**).
 - **Hands-on**: build a workflow and try something yourself.
 :::
