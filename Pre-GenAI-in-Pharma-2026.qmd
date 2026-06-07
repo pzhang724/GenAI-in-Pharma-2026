@@ -53,14 +53,15 @@ format:
 This talk is presented in two different time zones:
 
 - **US session**
-  - Peng Zhang,  Associate Director, Innovative Data Sciences
+  - Peng Zhang,  Associate Director, Innovative Data Sciences; [Linkedin](linkedin.com/in/peng-zhang-4522a0127), [Github](https://github.com/pzhang724/)
   - Internal development of R packages, R Shiny apps, agentic workflow, 
   - R for monitoring and submissions
   - SME for environment & platform development. 
 - **APAC session** 
-  - Mia Chen, Clinical Data Scientist
+  - Mia Chen, Clinical Data Scientist; [Linkedin](https://www.linkedin.com/in/chchen11/)
   - Clinical data engineering, R Shiny application development
   - AI-driven workflow automation for clinical research.
+- The materials are publicly available [here](https://pzhang724.github.io/GenAI-in-Pharma-2026)
 
 # Before — early exploration
 
@@ -254,4 +255,4 @@ In a regulated environment, capability is the easy half. The other half:
 
 . . .
 
-Thank you — questions welcome.
+Thank you!
