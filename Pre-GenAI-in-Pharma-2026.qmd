@@ -17,8 +17,6 @@ format:
     incremental: false
     toc: false
     footer: "GenAI in Pharma 2026 — Virtual"
-    title-slide-attributes:
-      data-background-color: "#2B2B2B"
 ---
 
 ## The threshold we crossed
@@ -50,7 +48,7 @@ A hands-on report in three parts:
 
 Examples throughout, to keep it concrete.
 
-# Before — early exploration {background-color="#C8102E"}
+# Before — early exploration
 
 ## Where I started
 
@@ -81,7 +79,7 @@ Not one workflow — a spectrum:
   **one-person department** becomes possible.
 :::
 
-# During — observations after diving in {background-color="#C8102E"}
+# During — observations after diving in
 
 ## A concrete example
 
@@ -147,7 +145,7 @@ A GenAI workflow that touches regulated work still owes the usual:
 - Solid **data models** *(Doug's point)* and purpose-built pipelines like **pycsr**
 :::
 
-# After — for those preparing to do the same {background-color="#C8102E"}
+# After — for those preparing to do the same
 
 ## When the model gets good enough
 
@@ -188,7 +186,7 @@ Different work needs different modes — pick deliberately, don't default.
 - That's not a limitation to engineer away. It's the **point**.
 :::
 
-# Takeaways {background-color="#C8102E"}
+# Takeaways
 
 ## What I'd leave you with
 

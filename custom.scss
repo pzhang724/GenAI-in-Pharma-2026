@@ -1,11 +1,10 @@
 /*-- scss:defaults --*/
 
 // === Palette ===========================================================
-$primary-red:   #C8102E;  // primary / accent
-$charcoal:      #2B2B2B;  // body text
-$white:         #FFFFFF;  // background
-$gray-band:     #F4F4F4;  // faint section bands
-$gray-leaf:     #EEEEEE;  // light-gray leaf decorations
+$primary-red: #C8102E;  // accent / emphasis
+$charcoal:    #2B2B2B;  // body text (black)
+$gray:        #6B6B6B;  // muted text (footer, slide number)
+$white:       #FFFFFF;  // background
 
 // Reveal theme variables
 $body-bg:        $white;
@@ -20,8 +19,10 @@ $presentation-heading-font-weight: 700;
 
 /*-- scss:rules --*/
 
-// --- Body & emphasis ---------------------------------------------------
-.reveal {
+// White background everywhere.
+.reveal,
+body.reveal-viewport {
+  background: $white;
   color: $charcoal;
 }
 
@@ -38,6 +39,11 @@ $presentation-heading-font-weight: 700;
 }
 
 // --- Headings ----------------------------------------------------------
+// Section divider slides (`# Title`) render as red headings on white.
+.reveal h1 {
+  color: $primary-red;
+}
+
 .reveal h2 {
   color: $charcoal;
   border-bottom: 3px solid $primary-red;
@@ -49,62 +55,6 @@ $presentation-heading-font-weight: 700;
   color: $charcoal;
 }
 
-// --- Faint gray section band (behind the heading area) -----------------
-// Only shows on white content slides; colored divider slides paint over it.
-body.reveal-viewport {
-  background:
-    linear-gradient(
-      180deg,
-      $white 0%,
-      $white 12%,
-      $gray-band 12%,
-      $gray-band 27%,
-      $white 27%,
-      $white 100%
-    );
-}
-
-// --- Light-gray leaf-shaped side decorations ---------------------------
-// Fixed, behind all content, subtle.
-.reveal::before,
-.reveal::after {
-  content: "";
-  position: fixed;
-  width: 340px;
-  height: 340px;
-  background: $gray-leaf;
-  border-radius: 0 100% 0 100%;   // leaf / petal silhouette
-  opacity: 0.55;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.reveal::before {
-  top: -110px;
-  left: -130px;
-  transform: rotate(12deg);
-}
-
-.reveal::after {
-  bottom: -110px;
-  right: -130px;
-  transform: rotate(192deg);
-}
-
-// Keep slide content above the decorations.
-.reveal .slides {
-  z-index: 1;
-}
-
-// --- Colored divider / title slides: white text ------------------------
-.reveal section[data-background-color] {
-  h1, h2, h3, p, li, strong, blockquote {
-    color: $white;
-    border-color: rgba($white, 0.6);
-  }
-  ol li::marker { color: $white; }
-}
-
 // --- Callouts ----------------------------------------------------------
 .reveal .callout.callout-style-default {
   border-left-color: $primary-red;
@@ -112,12 +62,12 @@ body.reveal-viewport {
 
 // --- Footer & slide number ---------------------------------------------
 .reveal .footer {
-  color: lighten($charcoal, 25%);
+  color: $gray;
 }
 
 .reveal .slide-number {
-  color: $charcoal;
-  background-color: rgba($gray-leaf, 0.85);
+  color: $gray;
+  background-color: transparent;
 }
 
 // Progress bar in primary red.
