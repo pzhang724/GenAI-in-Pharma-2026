@@ -1,7 +1,9 @@
 project:
   type: default
   output-dir: _site
+  render:
+    - Pre-GenAI-in-Pharma-2026.qmd
 
-# Single reveal.js presentation. `Pre-GenAI-in-Pharma-2026.qmd` renders to
-# `_site/Pre-GenAI-in-Pharma-2026.html`. The GitHub Pages workflow publishes
-# the whole `_site/` directory; link the deck at that path directly.
+# Single reveal.js presentation. `Pre-GenAI-in-Pharma-2026.qmd` sets
+# `output-file: index.html`, so it renders to `_site/index.html` and is
+# served at the site root. The GitHub Pages workflow publishes `_site/`.

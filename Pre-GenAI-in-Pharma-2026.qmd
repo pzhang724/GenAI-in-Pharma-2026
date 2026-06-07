@@ -6,6 +6,7 @@ date: 2026-06-16
 date-format: "MMMM D, YYYY"
 format:
   revealjs:
+    output-file: index.html
     theme: [default, custom.scss]
     slide-number: c/t
     progress: true
