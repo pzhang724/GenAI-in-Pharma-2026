@@ -119,6 +119,24 @@ body.reveal-viewport {
   font-size: 0.6em;
 }
 
+// --- Headshots (circular photo with red ring) --------------------------
+.reveal img.headshot {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 3px $white, 0 0 0 7px #C8102E;
+  margin: 0.4em auto;
+  display: block;
+}
+
+.reveal .headshot-caption {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
 // --- Callouts ----------------------------------------------------------
 .reveal .callout.callout-style-default {
   border-left-color: $primary-red;
