@@ -1,7 +1,7 @@
 ---
 title: "Hands Dirty First"
 subtitle: "Practical Notes from Before, During, and After Building Agentic Workflows"
-author: "Peng Zhang · CIMS Global"
+author: "Peng Zhang, Mia Chen -  CIMS Global"
 date: 2026-06-16
 date-format: "MMMM D, YYYY"
 format:
@@ -54,21 +54,20 @@ This talk is presented in two different time zones and available [here](https://
 
 - **US session**
   - Peng Zhang,  Associate Director, Innovative Data Sciences; [Linkedin](https://www.linkedin.com/in/peng-zhang-4522a0127), [Github](https://github.com/pzhang724/)
-  - Internal development of R packages, R Shiny apps, agentic workflow, 
-  - R for monitoring and submissions
-  - SME for environment & platform development. 
+  - Internal development of R packages, R Shiny apps, and agentic workflows
+  - SME for environment & platform development
 - **APAC session** 
   - Mia Chen, Clinical Data Scientist; [Linkedin](https://www.linkedin.com/in/chchen11/)
   - Clinical data engineering, R Shiny application development
   - AI-driven workflow automation for clinical research.
 
-# Before — early exploration
+# Before — Early Exploration
 
 ## Where I'm coming from
 
 ::: {.columns}
 ::: {.column width="55%"}
-From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands dirty** before any of the workflow work:
+From a LinkedIn post I wrote early this year — **six months of getting my hands dirty** before any of the workflow work:
 
 - **Daily** practice with different AI assistants
 - Follow **AI creators**; learn the *curated* news
@@ -85,10 +84,10 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 ## Mindset Change
 
 ::: {.incremental}
-- Previously, I used the agent to ask the question, refine the code for simple tasks 
-- Early this year, watch the short courses from [Eric Zhang](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} for **PharmaDS 2026**.
-- [PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller} 
-- By talking to the agent, giving detailed information, it can search, analyze and generate review for previous public studies.
+- Previously, I used the agent to ask questions and refine code for simple tasks
+- Early this year, I watched the short courses from [Eric Zhang](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} for **PharmaDS 2026**.
+- [PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller}
+- By talking to the agent and giving it detailed information, it can search, analyze, and generate reviews of previous public studies.
 - Moreover, this can happen in a **personal workplace**.
 :::
 
@@ -127,7 +126,7 @@ From a LinkedIn post I wrote (Feb, 2026) — **six months of getting my hands di
 
 ## Example 1 - A demo for [paperclip](https://gxl.ai/blog/paperclip)
 
-A tool for scientific literature reivew, personally built them in **R Shiny** by different roles. [link](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/)
+A tool for scientific literature review, which I built personally in **R Shiny** with different roles. [link](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/)
 
 ![](image/image-4.png){fig-alt="Clinical AI Agent Shiny app showing a GLP-1 receptor agonist competitive landscape" width="66%" fig-align="center"}
 
@@ -146,7 +145,7 @@ A tool for scientific literature reivew, personally built them in **R Shiny** by
 - And **what should stay human-readable**?
 :::
 
-## An interesting Experience
+## An Interesting Experience
 
 ::: {.incremental}
 - "Keep a human in the loop" **sounds like a safety guarantee.**
@@ -159,20 +158,20 @@ A tool for scientific literature reivew, personally built them in **R Shiny** by
 
 ::: {.columns}
 ::: {.column width="58%"}
-- I created a docker for RStudio
-- I install Claude Code in the RStudio (Yes you can use that through terminal from RStudio)
-- I use Claude Code to:
-  - Read the more than 90K line of data
-  - Generate an html visualization
-  - Separate the data by domain to have a sense on the data.
-- Then ask agent to
-  - Use reference from SDTM IG with index (more efficiently, saving window)
-  - Write the SDTM spec into .yaml format (human and machine readable) for different domain
-  - Write the R code based on .yaml file
-  - Generate the SDTM dataset and checklogs, resolve all the coding errors
-  - Do the same for ADaM Part. 
+- I created a Docker image for RStudio
+- I installed Claude Code in RStudio (yes, you can use it through the terminal in RStudio)
+- I used Claude Code to:
+  - Read the more than 90K lines of data
+  - Generate an HTML visualization
+  - Separate the data by domain to get a sense of the data
+- Then asked the agent to:
+  - Use references from the SDTM IG with an index (more efficient, saving context window)
+  - Write the SDTM spec in .yaml format (human- and machine-readable) for each domain
+  - Write the R code based on the .yaml file
+  - Generate the SDTM datasets and check logs, resolving all coding errors
+  - Do the same for the ADaM part
 - [Pull Request](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)
-- Including Environment setup, this costs me around 5 hours totally for the initial draft.
+- Including environment setup, this cost me around 5 hours total for the initial draft.
 :::
 ::: {.column width="42%"}
 ![](image/image-3.png){fig-align="center"}
@@ -190,7 +189,7 @@ A tool for scientific literature reivew, personally built them in **R Shiny** by
 — and **I'm a human in the loop.**
 - Is *that* what "**human-in-the-loop**" should mean? **What are we missing?**
 - The missing piece: an **immediate human review / approve / authorize** step to ensure correctness.
-- **Still ongoing.** from the working group
+- **Still ongoing** from the working group
 :::
 
 # After - Different Aspects to consider 
@@ -198,22 +197,22 @@ A tool for scientific literature reivew, personally built them in **R Shiny** by
 ## Comparison
 
 ::: {.incremental}
-- We might see lots of agentic workflow claim they are generating code/results in **a short period of time** (e.g. several hours)
-- However, original programmatic solutions can also address this efficiently (e.g., TFL)
+- We might see lots of agentic workflows claim they generate code/results in **a short period of time** (e.g., several hours)
+- However, traditional programmatic solutions can also address this efficiently (e.g., TFL)
 - So ask: **what are we comparing against by using AI?**
-- It's a good way to use AI to **accelerate an existing, validated process** (maintained and validated in several years)
+- It's a good way to use AI to **accelerate an existing, validated process** (maintained and validated over several years)
 :::
 
 ## Evaluation
 
 ::: {.incremental}
 - [Submission Working Group Pilot 7](https://github.com/RConsortium/pharma-skills)
-    - Publicly Available agentic workflow in Pharma. 
+    - Publicly available agentic workflow in Pharma. 
     - Still ongoing 
-- Recommendations 
+- Personal Recommendations 
   - Build your **benchmark** with test cases — *easy, medium, difficult*.
   - Define your **rubrics** — Compliance, Correctness, Completeness.
-  - Run the **evaluation** on your agentic workflow.
+  - Run the **evaluations** on your agentic workflow and benchmark.
   - **Collect the evidence** and results.
   - [Good References](https://agentskills.io/home)
 :::
@@ -235,8 +234,9 @@ In a regulated environment, capability is the easy half. The other half:
 
 ::: {.incremental}
 - **Data privacy** — HIPAA, GDPR
-- **Confidential information & trade secrets** — what can leave the building?
+- **Confidential information & trade secrets** — what can be sent.
 - **Where does the model run?** — trust in **Anthropic vs Azure vs Amazon Bedrock**
+- AI Policy, Governance, Compliance, Audit Trails, etc.
 :::
 
 
@@ -245,10 +245,10 @@ In a regulated environment, capability is the easy half. The other half:
 ## What I'd leave you with
 
 ::: {.incremental}
--  Get your hands dirty first — Try using terminal and different CLI.
--  Build a workflow for yourself and see what are available and what can be improved.
--  Domain knowledge still matter the most for the correctness; Accountability stays with people
--  Use dummy data and public available information, and take advantage of them.
+-  Get your hands dirty first — try using the terminal and different CLIs.
+-  Build a workflow for yourself and see what is available and what can be improved.
+-  Domain knowledge still matters the most for correctness; accountability stays with people.
+-  Use dummy data and publicly available information, and take advantage of them.
 :::
 
 
