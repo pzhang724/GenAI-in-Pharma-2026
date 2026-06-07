@@ -71,6 +71,32 @@ body.reveal-viewport {
   margin-bottom: 0.35em;
 }
 
+// --- Title slide -------------------------------------------------------
+// Bigger title-page type.
+#title-slide .title {
+  font-size: 2.6em;
+  line-height: 1.1;
+}
+#title-slide .subtitle {
+  font-size: 1.35em;
+}
+#title-slide .quarto-title-author-name,
+#title-slide .author,
+#title-slide .date {
+  font-size: 1.15em;
+}
+
+// Two logos centered below the title block.
+.title-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1.6rem;
+}
+.title-logos p { margin: 0; }
+.title-logos img { margin: 0; }
+
 // --- Per-slide larger text (`{.bigtext}`) ------------------------------
 .reveal .bigtext p,
 .reveal .bigtext li {

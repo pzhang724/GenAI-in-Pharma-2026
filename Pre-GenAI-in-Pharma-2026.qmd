@@ -19,6 +19,11 @@ format:
     footer: "GenAI in Pharma 2026 — Virtual"
 ---
 
+::: {.title-logos}
+![](image/logo.png){fig-alt="CIMS Global logo" height="64px"}
+![](image/logo-rinpharma.png){fig-alt="R/Pharma logo" height="64px"}
+:::
+
 ## Presented in two sessions {.bigtext}
 
 This talk is presented in two different time zones:
