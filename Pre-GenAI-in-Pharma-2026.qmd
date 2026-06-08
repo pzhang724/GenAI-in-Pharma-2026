@@ -99,10 +99,11 @@ Mia Chen
 
 ::: {.columns}
 ::: {.column width="55%"}
-From a LinkedIn post I wrote early this year — **six months of getting my hands dirty** before any of the workflow work:
+From a LinkedIn post I wrote early this year — **Exploration** before any of the workflow work:
 
 - **Daily** practice with different AI assistants
 - Follow **AI creators**; learn the *curated* news
+- Once you feel 'I shouldn't wait any more' 
 - Then pick an **IDE**, spend **$20** on a pro agent, and work **inside the IDE and Terminal**
 - Try different models and get familiar 
 
@@ -113,14 +114,14 @@ From a LinkedIn post I wrote early this year — **six months of getting my hand
 :::
 :::
 
-## Mindset Change
+## Transition
 
 ::: {.incremental}
 - Previously, I used the agent to ask questions and refine code for simple tasks
 - Early this year, I watched the short courses from [Eric Zhang](https://www.linkedin.com/in/eric-pingye-zhang-b9382582/){style="text-decoration: underline;"} for **PharmaDS 2026**.
 - [PharmaDS 2026 short courses](https://phds.nestat.org/short_courses.html){.smaller}
 - By talking to the agent and giving it detailed information, it can search, analyze, and generate reviews of previous public studies.
-- Moreover, this can happen in a **personal workplace**.
+- Moreover, this can happen in a **personal workplace**, easily.
 :::
 
 . . .
@@ -152,15 +153,17 @@ From a LinkedIn post I wrote early this year — **six months of getting my hand
   - **Hands-on**: build a workflow and try something yourself.
 - Building an agentic workflow is so accessible
   - The **"Skill"** concept in Claude.
-  - Instruct it with a **markdown file** and references.
+  - Instruct it with a **markdown file** and references (not necessarily through fine-tuning)
   - The **context window** is large enough to absorb all the knowledge you provide.
+  - Less concern about hallucination (as better models exist)
 :::
 
 ## Example 1 - A demo for [paperclip](https://gxl.ai/blog/paperclip)
 
-A tool for scientific literature review, which I built personally in **R Shiny** with different roles. [link](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/)
+- A tool for scientific literature review
+- which I built personally in **R Shiny** with different roles with pre-saved sessions. [link](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/)
 
-![](image/image-4.png){fig-alt="Clinical AI Agent Shiny app showing a GLP-1 receptor agonist competitive landscape" width="66%" fig-align="center"}
+![](image/animation3.gif){width="60%" fig-align="center"}
 
 
 ## Example 2 — generating a mock shell
@@ -175,6 +178,7 @@ A tool for scientific literature review, which I built personally in **R Shiny**
 - Fortunately, in our industry **humans stay accountable** for every asset.
 - So I keep asking: what is the **minimum a human must still do**?
 - And **what should stay human-readable**?
+- Goal: Efficiency but still accountability
 :::
 
 ## An Interesting Experience
@@ -196,6 +200,18 @@ A tool for scientific literature review, which I built personally in **R Shiny**
   - Read the more than 90K lines of data
   - Generate an HTML visualization
   - Separate the data by domain to get a sense of the data
+
+:::
+::: {.column width="42%"}
+![](image/image-3.png){fig-align="center"}
+![](image/image-5.png){fig-align="center"}
+
+
+:::
+:::
+
+## Then
+
 - Then asked the agent to:
   - Use references from the SDTM IG with an index (more efficient, saving context window)
   - Write the SDTM spec in .yaml format (human- and machine-readable) for each domain
@@ -204,13 +220,6 @@ A tool for scientific literature review, which I built personally in **R Shiny**
   - Do the same for the ADaM part
 - [Pull Request](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)
 - Including environment setup, this cost me around 5 hours total for the initial draft.
-:::
-::: {.column width="42%"}
-![](image/image-3.png){fig-align="center"}
-
-
-:::
-:::
 
 ## But — am I really in the loop?
 
