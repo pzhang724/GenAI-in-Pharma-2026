@@ -84,6 +84,15 @@ Mia Chen
 :::
 :::
 
+## Agenda
+
+::: {.incremental}
+- **Before** — Early exploration: getting my hands dirty
+- **During** — Observations after diving in
+- **After** — Different aspects to consider (comparison, evaluation, efficiency, governance)
+- **Conclusion** — What I'd leave you with
+:::
+
 # Before — Early Exploration
 
 ## Where I'm coming from
@@ -275,12 +284,12 @@ In a regulated environment, capability is the easy half. The other half:
 :::
 
 
-## Thank you! {.bigtext}
+## Thank you!
 
-**Peng Zhang**
+- **Peng Zhang**
 
-[pzhang@cims-global.com](mailto:pzhang@cims-global.com)
+- [pzhang@cims-global.com](mailto:pzhang@cims-global.com)
 
-CIMS Global, Somerset, NJ
+- CIMS Global, Somerset, NJ
 
-[www.cims-global.com](https://www.cims-global.com)
+- [www.cims-global.com](https://www.cims-global.com)
