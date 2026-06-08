@@ -190,10 +190,10 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
 - **Why not?**
 :::
 
-## How I did it {.smaller}
+## How I did it 
 
 ::: {.columns}
-::: {.column width="58%"}
+::: {.column width="40%"}
 - I created a Docker image for RStudio
 - I installed Claude Code in RStudio (yes, you can use it through the terminal in RStudio)
 - I used Claude Code to:
@@ -202,7 +202,7 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
   - Separate the data by domain to get a sense of the data
 
 :::
-::: {.column width="42%"}
+::: {.column width="60%"}
 ![](image/image-3.png){fig-align="center"}
 ![](image/image-5.png){fig-align="center"}
 
