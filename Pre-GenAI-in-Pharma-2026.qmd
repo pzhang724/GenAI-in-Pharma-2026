@@ -193,7 +193,7 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
 ## How I did it 
 
 ::: {.columns}
-::: {.column width="40%"}
+::: {.column width="50%"}
 - I created a Docker image for RStudio
 - I installed Claude Code in RStudio (yes, you can use it through the terminal in RStudio)
 - I used Claude Code to:
@@ -202,7 +202,7 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
   - Separate the data by domain to get a sense of the data
 
 :::
-::: {.column width="60%"}
+::: {.column width="50%"}
 ![](image/image-3.png){fig-align="center"}
 ![](image/image-5.png){fig-align="center"}
 
@@ -219,7 +219,7 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
   - Generate the SDTM datasets and check logs, resolving all coding errors
   - Do the same for the ADaM part
 - [Pull Request](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)
-- Including environment setup, this cost me around 5 hours total for the initial draft.
+- Including environment setup, this cost me around **5 hours total** for the initial draft.
 
 ## But — am I really in the loop?
 
