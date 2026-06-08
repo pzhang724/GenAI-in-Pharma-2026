@@ -163,7 +163,7 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
 - A tool for scientific literature review
 - which I built personally in **R Shiny** with different roles with pre-saved sessions. [link](https://pzhang-link-claude-code-paperclip.share.connect.posit.cloud/)
 
-![](image/animation3.gif){width="60%" fig-align="center"}
+![](image/Animation3.gif){width="60%" fig-align="center"}
 
 
 ## Example 2 — generating a mock shell
