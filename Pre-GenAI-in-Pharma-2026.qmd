@@ -212,18 +212,22 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
 
 ## Then
 
-- Then asked the agent to:
+::: {.incremental}
+- Asked the agent to:
   - Use references from the SDTM IG with an index (more efficient, saving context window)
   - Write the SDTM spec in .yaml format (human- and machine-readable) for each domain
   - Write the R code based on the .yaml file
   - Generate the SDTM datasets and check logs, resolving all coding errors
   - Do the same for the ADaM part
 - [Pull Request](https://github.com/RConsortium/submissions-pilot7-synthetic-data/pull/5)
-- Including environment setup, this cost me around **5 hours total** for the initial draft.
+- And it's a Saturday Night
+- Including environment setup, this costs me around **5 hours total** for the initial draft.
+::: 
 
 ## But — am I really in the loop?
 
 ::: {.incremental}
+- The point is not how fast I generate those.
 - One uncomfortable truth: after generating the data, **I know almost nothing about it.**
 - I can't be sure the **code** is right or the **data** is right.
 - I only know: the **spec is written**, **code generated**, **no errors**, **data produced** 
@@ -231,6 +235,7 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
 - Is *that* what "**human-in-the-loop**" should mean? **What are we missing?**
 - The missing piece: an **immediate human review / approve / authorize** step to ensure correctness.
 - **Still ongoing** from the working group
+- Human in the loop is not everything.
 :::
 
 # After - Different Aspects to consider 
@@ -262,21 +267,27 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
 
 ::: {.incremental}
 - An inspiring thread of conversations with [Doug Kelkhoff](https://www.linkedin.com/in/doug-kelkhoff/).
-- In the era of agents and LLMs, **data models may matter even more** — structured data that connects to unstructured context.
+- We do observe better performance of LLMs
+- Following this, **data models may matter even more** — structured data that connects to unstructured context.
 - This standard sits between your input and output.
+- ODM, CDASH, SDTM, ADaM
+- USDM, ARS, ARD
+- Alternatives? 
 - Benefit: **reliability and efficiency**.
+  - Check what is generated at the mid of process.
+  - Provide efficient structure of information for LLM to understand. 
 :::
 
 
 
-## Governance is the hard part
+## Governance is the another important part
 
-In a regulated environment, capability is the easy half. The other half:
+In a regulated environment, capability is the one half. The other half:
 
 ::: {.incremental}
-- **Data privacy** — HIPAA, GDPR
-- **Confidential information & trade secrets** — what can be sent.
-- **Where does the model run?** — trust in **Anthropic vs Azure vs Amazon Bedrock**
+- **Data privacy**: HIPAA, GDPR
+- **Confidential information & trade secrets**: what can be sent.
+- **Where does the model run?**: trust in **Anthropic vs Azure vs Aws**
 - AI Policy, Governance, Compliance, Audit Trails, etc.
 :::
 
@@ -289,7 +300,7 @@ In a regulated environment, capability is the easy half. The other half:
 -  Get your hands dirty first — try using the terminal and different CLIs.
 -  Build a workflow for yourself and see what is available and what can be improved.
 -  Domain knowledge still matters the most for correctness; accountability stays with people.
--  Use dummy data and publicly available information, and take advantage of them.
+-  Use dummy data and publicly available information first, and take advantage of them.
 :::
 
 
