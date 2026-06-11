@@ -57,7 +57,7 @@ This talk is presented in two different time zones and available [https://pzhang
 - **US session**
   - Peng Zhang,  Associate Director, Innovative Data Sciences; [Linkedin](https://www.linkedin.com/in/peng-zhang-4522a0127), [Github](https://github.com/pzhang724/)
   - Project Statistician/Independent Statistician
-  - Internal development of R packages, R Shiny apps, and agentic workflows
+  - Production of R packages, R Shiny apps, and agentic workflows
  
 :::
 ::: {.column width="22%"}
@@ -87,25 +87,11 @@ Mia Chen
 
 ## Agenda
 
-::: {.columns}
-::: {.column width="52%"}
 ::: {.incremental}
 - **Before** — Early exploration
 - **During** — Observations after diving in
 - **After** — Different aspects to consider (comparison, evaluation, efficiency, governance)
 - **Conclusion** — What I'd leave you with
-:::
-:::
-::: {.column width="48%"}
-```{mermaid}
-flowchart TD
-    A["<b>Before</b><br/>Early exploration"] --> B["<b>During</b><br/>Diving in"]
-    B --> C["<b>After</b><br/>Aspects to consider"]
-    C --> D["<b>Conclusion</b><br/>What I'd leave you with"]
-    classDef step fill:#eef2ff,stroke:#4f46e5,stroke-width:1.5px;
-    class A,B,C,D step;
-```
-:::
 :::
 
 # Before — Early Exploration
@@ -198,27 +184,11 @@ From a LinkedIn post I wrote early this year — **Exploration** before any of t
 
 ## An Interesting Experience
 
-::: {.columns}
-::: {.column width="58%"}
 ::: {.incremental}
 - "Keep a human in the loop" **sounds like a safety guarantee.**
 - A real experience: working on **Pilot 7** Synthetic Data Generation ([R Consortium synthetic-data submission](https://github.com/RConsortium/submissions-pilot7-synthetic-data)).
 - Group Lead [Yilong Zhang](https://www.linkedin.com/in/yilongzhang/) asked: *can you generate SDTM and ADaM data from a source dataset in `.xml`?*
 - **Why not?**
-:::
-:::
-::: {.column width="42%"}
-```{mermaid}
-flowchart TD
-    X["Source dataset<br/>(.xml)"] --> Q{"Generate?"}
-    Q --> S["SDTM"]
-    Q --> A["ADaM"]
-    classDef ask fill:#fff3cd,stroke:#e0a800,stroke-width:2px;
-    classDef out fill:#d4edda,stroke:#28a745,stroke-width:1.5px;
-    class Q ask;
-    class S,A out;
-```
-:::
 :::
 
 ## How I did it 
@@ -257,37 +227,20 @@ flowchart TD
 
 ## But — am I really in the loop?
 
-::: {.columns}
-::: {.column width="58%"}
 ::: {.incremental}
 - The point is not how fast I generate those.
 - One uncomfortable truth: after generating the data, **I know almost nothing about it.**
 - I can't be sure the **code** is right or the **data** is right.
-- I only know: the **spec is written**, **code generated**, **no errors**, **data produced** — and **I'm a human in the loop.**
+- I only know: the **spec is written**, **code generated**, **no errors**, **data produced**
+— and **I'm a human in the loop.**
 - Is *that* what "**human-in-the-loop**" should mean? **What are we missing?**
 - The missing piece: an **immediate human review / approve / authorize** step to ensure correctness.
 - **Still ongoing** from the working group
 - Human in the loop is not everything.
 :::
-:::
-::: {.column width="42%"}
-```{mermaid}
-flowchart TD
-    A["Spec written"] --> B["Code generated"]
-    B --> C["No errors"]
-    C --> D["Data produced"]
-    D --> E["Human<br/>'in the loop'"]
-    E -.->|missing| F["Review /<br/>Approve /<br/>Authorize"]
-    classDef miss fill:#fde2e2,stroke:#d33,stroke-width:2px,stroke-dasharray: 5 5;
-    class F miss;
-```
-:::
-:::
 
 ## Further possible workflow
 
-::: {.columns}
-::: {.column width="58%"}
 ::: {.incremental}
 - Human use AI to generate/develop the contents
 - To approve the document, human needs thoroughly review and authorize the document/deliverables
@@ -300,49 +253,17 @@ flowchart TD
   - Know what is correct: Comprehensive domain knowledge to identify errors
   - We still need Junior level data scientist/statistician <-> Organization's Training
 :::
-:::
-::: {.column width="42%"}
-```{mermaid}
-flowchart TD
-    G["Human + AI<br/>generate content"] --> R{"Approve"}
-    R --> V["Validated algorithm<br/>check"]
-    R --> M["Human review<br/>+ domain expertise"]
-    V --> AU["Authorize<br/>deliverable"]
-    M --> AU
-    classDef ok fill:#d4edda,stroke:#28a745,stroke-width:2px;
-    classDef ask fill:#fff3cd,stroke:#e0a800,stroke-width:2px;
-    class AU ok;
-    class R ask;
-```
-:::
-:::
 
 
 # After - Different Aspects to consider 
 
 ## Comparison
 
-::: {.columns}
-::: {.column width="55%"}
 ::: {.incremental}
 - We might see lots of agentic workflows claim they generate code/results in **a short period of time** (e.g., several hours)
 - However, traditional programmatic solutions can also address this efficiently (e.g., TFL)
 - So ask: **what are we comparing against by using AI?**
 - It's a good way to use AI to **accelerate an existing, validated process** (maintained and validated over several years)
-:::
-:::
-::: {.column width="45%"}
-```{mermaid}
-flowchart TD
-    T["Task"] --> AI["AI agentic workflow<br/>~ hours"]
-    T --> TR["Traditional validated<br/>e.g., TFL · years validated"]
-    AI --> R["Result"]
-    TR --> R["Result"]
-    R --> B["<b>Best:</b> AI accelerates an<br/>existing validated process"]
-    classDef good fill:#d4edda,stroke:#28a745,stroke-width:2px;
-    class B good;
-```
-:::
 :::
 
 ## Evaluation
@@ -361,8 +282,6 @@ flowchart TD
 
 ## Efficiency — data models matter
 
-::: {.columns}
-::: {.column width="56%"}
 ::: {.incremental}
 - An inspiring thread of conversations with [Doug Kelkhoff](https://www.linkedin.com/in/doug-kelkhoff/).
 - We do observe better performance of LLMs
@@ -374,18 +293,6 @@ flowchart TD
 - Benefit: **reliability and efficiency**.
   - Check what is generated at the mid of process.
   - Provide efficient structure of information for LLM to understand.
-:::
-:::
-::: {.column width="44%"}
-```{mermaid}
-flowchart TD
-    I["Unstructured<br/>context / input"] --> DM["<b>Structured Data Model</b><br/>ODM · CDASH · SDTM · ADaM<br/>USDM · ARS · ARD"]
-    DM --> O["LLM output"]
-    DM -.->|checkpoint| CHK["Check<br/>mid-process"]
-    classDef mid fill:#cfe2ff,stroke:#0d6efd,stroke-width:2.5px;
-    class DM mid;
-```
-:::
 :::
 
 
