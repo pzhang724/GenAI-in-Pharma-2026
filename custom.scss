@@ -137,6 +137,28 @@ body.reveal-viewport {
   margin: 0 0 1em 0;
 }
 
+// --- Agenda four-box illustration --------------------------------------
+.reveal .agenda-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+  margin-top: 0.2em;
+}
+
+.reveal .agenda-box {
+  border: 2px solid $primary-red;
+  border-left: 6px solid #C8102E;
+  border-radius: 8px;
+  padding: 0.45em 0.7em;
+  font-size: 0.85em;
+  line-height: 1.25;
+  background: #FAFAFA;
+}
+
+.reveal .agenda-box strong {
+  color: #C8102E;
+}
+
 // --- Callouts ----------------------------------------------------------
 .reveal .callout.callout-style-default {
   border-left-color: $primary-red;
