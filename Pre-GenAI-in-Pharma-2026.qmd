@@ -87,30 +87,18 @@ Mia Chen
 
 ## Agenda
 
-::: {.columns}
-::: {.column width="52%"}
-::: {.incremental}
-- **Before** — Early exploration
-- **During** — Observations after diving in
-- **After** — Different aspects to consider (comparison, evaluation, efficiency, governance)
-- **Conclusion** — What I'd leave you with
-:::
-:::
-::: {.column width="48%"}
 ::: {.agenda-boxes}
 ::: {.agenda-box}
 **Before** · Early exploration
 :::
 ::: {.agenda-box}
-**During** · Diving in
+**During** · Observations after diving in
 :::
 ::: {.agenda-box}
-**After** · Aspects to consider
+**After** · Comparison, evaluation, efficiency, governance
 :::
 ::: {.agenda-box}
 **Conclusion** · What I'd leave you with
-:::
-:::
 :::
 :::
 
